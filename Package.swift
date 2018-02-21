@@ -20,4 +20,7 @@ import PackageDescription
 
 let package = Package(
     name: "swift-nio-ssl-support",
-    pkgConfig: "openssl")
+    pkgConfig: "openssl",
+    providers: [
+        .brew(["libressl"]),
+    ])
